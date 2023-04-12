@@ -1,0 +1,27 @@
+<meta charset = "UTF-8">
+
+<script>
+
+    function saltarlinea(){
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    //Funcion con parametro de entrada
+    function imprimir(escribir){
+
+        document.write(escribir)
+        //Llamar funcion de salto de linea dentro de la funcion imprimir
+        saltarlinea();
+
+    }
+    function edades(edadSteven,edadHermano){
+        return edadSteven - edadHermano
+
+    }
+
+    imprimir("La diferencia de edades es de " + edades(18,15))
+
+</script>

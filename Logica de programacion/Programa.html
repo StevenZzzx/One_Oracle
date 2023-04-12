@@ -1,0 +1,41 @@
+<meta charset = "UTF-8">
+
+<h1>PROGRAMA</h1>
+
+
+<script>
+
+    //Funcion sin parametro de entrada
+    function saltarlinea(){
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<hr>");
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    //Funcion con parametro de entrada
+    function imprimir(escribir){
+
+        document.write("<big>" + escribir + "</big>")
+        //Llamar funcion de salto de linea dentro de la funcion imprimir
+        saltarlinea();
+
+    }
+
+    var year = 2023;
+
+    //Este codigo calcula las edades de Juan,Steven y Pedro
+
+    imprimir("Juan tiene: " + (year-2003) + " años");
+    
+    imprimir("Steven tiene: " + (year-2004) + " años");
+
+    year = 2030
+    
+    imprimir("Pedro tiene: " + (year-2008) + " años");
+
+</script>

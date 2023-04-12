@@ -1,0 +1,41 @@
+<meta charset = "UTF-8">
+
+<h1>PROGRAMA CALCULAR IMC</h1>
+
+<script>
+    
+    //Funcion sin parametro de entrada
+    function saltarlinea(){
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    //Funcion con parametro de entrada
+    function imprimir(escribir){
+
+        document.write("<big>" + escribir + "</big>")
+        //Llamar funcion de salto de linea dentro de la funcion imprimir
+        saltarlinea();
+
+    }
+
+    function calcularImc(peso,altura) {
+
+       return (peso / (altura * altura));
+        
+    }
+
+    nombre = prompt("Informe su nombre: ")
+    pesoInformado = prompt(nombre + " Informe su peso: ")
+    alturaInformada = prompt(nombre + " Informe su altura: ")
+
+    imcCalculado = calcularImc(pesoInformado,alturaInformada)
+
+    imprimir(nombre + " Su imc calculado es: " + imcCalculado);
+
+</script>
