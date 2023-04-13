@@ -115,7 +115,6 @@
     display: flex;
     gap: 1rem;
     width: 600px;
-
 }
 
 .Button-container button{
@@ -132,17 +131,35 @@
     text-align: center;
 }
 
-.btn-encrypted{
+.btn-encrypted{   
     background: #7E2B1A;
-    border: none;
+    border: 1px solid black;
     color: white;
+    transition: all 0.2s ease-in-out;
 }
 
 .btn-desencrypted{
     background: #ebcf81;
     border: 1px solid #000000;
     color: #000000;
+    transition: all 0.2s ease-in-out;
+
 }
+
+.btn-encrypted:hover{
+
+    transform: scale(1.05); 
+    transition: all 0.3s ease-in;
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 30);
+}
+.btn-desencrypted:hover{
+
+    transition: all 0.3s ease-in;
+    transform: scale(1.05);
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 30);
+}
+
+
 
 .info-container{
     display: flex;
