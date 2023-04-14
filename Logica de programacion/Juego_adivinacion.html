@@ -23,17 +23,27 @@
         saltarlinea();
 
     }
+    function sorteo(numero){
 
-    var numeroPensado = Math.round(Math.random()*10);
+        return Math.round(Math.random() * numero)
+
+    }
+
+    var Numero = parseInt(prompt("Digite el numero de sorteo: "))
+    var numeroPensado = sorteo(Numero)
     var numeroLanzado = parseInt(prompt("Digite un numero entre 0-10: "));
 
     if (numeroPensado == numeroLanzado) {
         imprimir("Adivinaste el numero");
     }
     else{
+        if(numeroLanzado > numeroPensado){
 
-        imprimir("No acertaste el numero, el numero pensado era " + numeroPensado);
-        
+        imprimir("No acertaste el numero era menor a tu numero"); 
+        }
+        else{
+            imprimir("El numero lanzado era mayor al pensado") 
+        }
     }
 
 </script>
