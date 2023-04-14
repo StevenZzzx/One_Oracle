@@ -39,10 +39,11 @@
 }
 
 .textarea {     
-    display: block;     
+    display:block;     
     width: 100%;     
     overflow: hidden;     
     resize: both;
+    
 
     font-weight: 400;
     font-size: 32px;

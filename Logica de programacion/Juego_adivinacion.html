@@ -31,19 +31,32 @@
 
     var Numero = parseInt(prompt("Digite el numero de sorteo: "))
     var numeroPensado = sorteo(Numero)
-    var numeroLanzado = parseInt(prompt("Digite un numero entre 0-10: "));
-
-    if (numeroPensado == numeroLanzado) {
-        imprimir("Adivinaste el numero");
-    }
-    else{
-        if(numeroLanzado > numeroPensado){
-
-        imprimir("No acertaste el numero era menor a tu numero"); 
+    var intentos = 3;
+    var contador = 1;
+    
+    while(contador <= intentos){
+        
+        var numeroLanzado = parseInt(prompt("Digite un numero entre 0-10: "));
+        if (numeroPensado == numeroLanzado) {
+            alert("Adivinaste el numero en el intento " + contador);
+            break
         }
         else{
-            imprimir("El numero lanzado era mayor al pensado") 
+            if(numeroLanzado > numeroPensado){
+                alert("No acertaste el numero era menor a tu numero"); 
+            }
+            else{
+                alert("El numero lanzado era mayor al pensado") 
+            }
         }
+        contador++;
     }
-
+        if (numeroPensado == numeroLanzado) {
+            imprimir("Adivinaste el numero pensado era " + numeroPensado);
+    
+        }
+        else{
+            imprimir("No acertaste el numero pensado era " + numeroPensado); 
+            }
+    
 </script>

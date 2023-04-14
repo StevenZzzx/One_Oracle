@@ -1,0 +1,36 @@
+<meta charset = "UTF-8">
+
+<h1>PROGRAMA ESTRELLAS</h1>
+
+<script>
+    
+    //Funcion sin parametro de entrada
+    function saltarlinea(){
+
+        document.write("<br>");
+        document.write("<br>");
+        
+
+    }
+
+    //Funcion con parametro de entrada
+    function imprimir(escribir){
+
+        document.write("<big>" + escribir + "</big>")
+        //Llamar funcion de salto de linea dentro de la funcion imprimir
+        saltarlinea();
+
+    }
+
+    
+
+    for(var i = 1; i <= 5; i++){
+        for(var c = 1; c <=10; c++){
+            document.write("*");
+        }
+        saltarlinea();
+    }
+
+
+
+</script>
