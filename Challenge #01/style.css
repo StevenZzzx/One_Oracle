@@ -217,16 +217,45 @@
     flex-direction: column;
     justify-content: center;
 
-    padding: 4rem;
+    padding: 5px;
     
     background: #ebcf81;
 
     text-align: center;
-   
 }
 
 .noText{
     background-color: #ebcf81;
+}
+
+#workingText{
+    background-color: #ebcf81;
+    border: none;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 70px;
+}
+#btn-copy{
+    
+    width: 328px;
+    height: 67px;
+
+    border-radius: 24px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    cursor:pointer;
+
+    background: #ffffffa4;
+    border: 1px solid #000000;
+    color: #000000;
+    transition: all 0.2s ease-in-out;
 }
 
 @media screen and (max-width:820px){
