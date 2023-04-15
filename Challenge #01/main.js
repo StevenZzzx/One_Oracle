@@ -3,8 +3,6 @@
 principal_letters = ["a","e","i","o","u"]
 change_letters = ["ai","enter","imes","ober","ufat"]
 
-var decrypted_text = "hola como esta"
-var encrypted_text = "hoberlai cobermober enterstai"
 
 function encrypt(text){
     var encrypted = ""
@@ -20,9 +18,8 @@ function encrypt(text){
             encrypted += letra
         } 
     }
-    return (encrypted);
+    document.getElementById("workingText").value = encrypted
 }
-
 
 function desencrypt(text){
     var desencriptado = ""
@@ -41,9 +38,30 @@ function desencrypt(text){
             i++
         } 
     }
-    return (desencriptado);
+    document.getElementById("workingText").value = desencriptado
 }
 
-console.log(encrypt(decrypted_text))
-console.log(desencrypt(encrypted_text))
+function encryptFunction() {
+    text = document.getElementById("text").textContent;
+    document.getElementById("text").innerText = ""
+    document.getElementById("noText").style.display = "none";
+    document.getElementById("withText").style.display = "flex";
+    encrypt(text);
+}
 
+function decryptFunction() {
+    text = document.getElementById("text").textContent;
+    document.getElementById("text").innerText = ""
+    document.getElementById("noText").style.display = "none";
+    document.getElementById("withText").style.display = "flex";
+    desencrypt(text);
+}
+
+function copyText(){
+    var copyText = document.getElementById("workingText")
+
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+
+    navigator.clipboard.writeText(copyText.value);
+}

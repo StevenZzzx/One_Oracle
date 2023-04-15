@@ -16,7 +16,7 @@
         <div class="form-container">
             <div class="input-container"> 
                 <!-- <input type="text" placeholder="Ingrese el texto aqui..."> -->
-                <span class="textarea" role="textbox" contenteditable=>
+                <span id ="text" class="textarea" role="textbox" contenteditable=>
                 </span>
             </div>
           <div class="decorationP">
@@ -24,15 +24,21 @@
             <p>Solo letras minusculas y sin acentos</p>
           </div>
           <div class="Button-container">
-            <button class="btn-encrypted" onclick="encrypt();">Encriptar</button>
-            <button class="btn-desencrypted" >Desencriptar</button>
+            <button onClick=encryptFunction() class="btn-encrypted" >Encriptar</button>
+            <button onClick=decryptFunction() class="btn-desencrypted" >Desencriptar</button>
           </div>
         </div>
         <div class="info-container">
-          <img src="/assets/img/DivInfo.png" alt="CodigoInfo">
-          <div class="text_info">
-            <h2>Ningun mensaje fue <br> encontrado</h2>
-            <p>Ingrese el texto que desees encriptar o <br> desencriptar</p>
+          <div class = "noText" id="noText">
+            <img src="/assets/img/DivInfo.png" alt="CodigoInfo">
+            <div class="text_info">
+              <h2>Ningun mensaje fue <br> encontrado</h2>
+              <p>Ingrese el texto que desees encriptar o <br> desencriptar</p>
+            </div>
+          </div>
+          <div class = "withText" id="withText" style="display: none;">
+            <input readonly = "true" id="workingText"></input>
+            <button onclick=copyText() >Copiar</button>
           </div>
         </div>
       </div>

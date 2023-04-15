@@ -212,6 +212,23 @@
     color: #495057;
 }
 
+.withText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 4rem;
+    
+    background: #ebcf81;
+
+    text-align: center;
+   
+}
+
+.noText{
+    background-color: #ebcf81;
+}
+
 @media screen and (max-width:820px){
     .main-container{
         width: 400px;
