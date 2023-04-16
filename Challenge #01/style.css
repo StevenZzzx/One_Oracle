@@ -216,8 +216,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    padding: 5px;
     
     background: #ebcf81;
 
@@ -232,15 +230,15 @@
     background-color: #ebcf81;
     border: none;
     text-align: center;
-    font-style: normal;
     font-weight: 400;
     font-size: 24px;
     color: #000000;
-    margin-bottom: 70px;
+    padding-bottom: 500px;
+    
 }
 #btn-copy{
     
-    width: 328px;
+    width: 255px;
     height: 67px;
 
     border-radius: 24px;
@@ -256,6 +254,13 @@
     border: 1px solid #000000;
     color: #000000;
     transition: all 0.2s ease-in-out;
+    margin-top: 20px;
+}
+
+#btn-copy:hover{
+    transform: scale(1.05); 
+    transition: all 0.3s ease-in;
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 30);
 }
 
 @media screen and (max-width:820px){
@@ -297,15 +302,39 @@
     .info-container img{
         display: none;
     }
+
+    #workingText{
+        padding-bottom: 90px;
+    }
+
+    .withText{
+        width: 400px;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        margin-top: none;
+    }
+    
+    
 }
 
 @media screen and (max-width:415px){
 
+    .form-container{
+        margin-left: 20px;
+    }
     .Button-container{
         flex-direction: column;
     }
 
     .Button-container button{
         width: 328px;
+    }
+    .info-container{
+        width: 330px;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1rem;
+        margin-top: 7rem; 
     }
 }
