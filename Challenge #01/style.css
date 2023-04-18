@@ -21,7 +21,7 @@
 .img-container img{
     width: 120px;
     height: 48px;
-
+    margin-right: none;
 }
 
 .form-container{
