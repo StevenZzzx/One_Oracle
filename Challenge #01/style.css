@@ -98,9 +98,31 @@
     padding-top: 200px;
 }
 
+@keyframes warning{
+    0% {width: 15px;}
+    50% {width: 30px;}
+    100% {width: 30px;}
+}
+
+@keyframes noWarning{
+    0% {left: 0px;}
+}
+
 .decorationP img{
-    width: 16px;
-    height: 16px;
+    width: 25px;
+    
+    animation-name: noWarning;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.warning{
+    font-style: normal;
+    font-weight: 400;
+    font-size: auto;
+    line-height: 150%;
+    color: black;
+    opacity: 0,8;
 }
 
 .decorationP p{
@@ -160,7 +182,6 @@
     transform: scale(1.05);
     box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 30);
 }
-
 
 
 .info-container{
