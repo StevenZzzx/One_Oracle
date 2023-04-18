@@ -99,9 +99,9 @@
 }
 
 @keyframes warning{
-    0% {width: 15px;}
-    50% {width: 30px;}
+    50% {width: 15px;}
     100% {width: 30px;}
+    
 }
 
 @keyframes noWarning{
@@ -113,7 +113,7 @@
     
     animation-name: noWarning;
     animation-duration: 3s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite
 }
 
 .warning{
@@ -130,7 +130,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
-    color: #495057;
+    color: black;
     opacity: 0.8;
 }
 
