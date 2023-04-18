@@ -6,8 +6,7 @@
 
 .main-container{
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;  
 }
 
 .img-container{
@@ -24,6 +23,7 @@
 .img-container img{
     width: 120px;
     height: 48px;
+    margin-right: 20px;
 }
 
 .form-container{
@@ -54,38 +54,14 @@
     max-height: 670px;   
                               
     color: black;
+    margin-top: 190px;
 }
 
 .textarea[contenteditable]:empty::before {    
      content: "Ingrese el texto aqui...";    
      color: black;
-     opacity: 30%; 
-
+     opacity: 35%; 
     }
-
-
-/* .form-container input{
-    
-    display: block;
-
-    overflow: hidden;
-    resize: both;
- 
-    border: none;
-    background: none;
-
-    width: 577px;
-    height:auto;
-
-    font-style: normal;
-
-
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-
-    color: black;
-} */
 
 .decorationP{
     width: 450px;
@@ -94,8 +70,8 @@
 
     align-items: center;
     gap: 6px;
+    margin-top: 20px;
 
-    padding-top: 200px;
 }
 
 @keyframes warning{
@@ -286,12 +262,12 @@
 
 @media screen and (max-width:820px){
     .main-container{
-        width: 400px;
         flex-direction: column;
         justify-content: flex-start;
     }
 
     .form-container {
+        width: 400px;
         padding: 1.5rem;
         padding: 1.5rem;
     }
@@ -299,11 +275,15 @@
     .textarea{
         width: 450px;
         max-width: 450px;
-        margin: none;
+        margin-left: none;
     }
     
     .Button-container button{
         width: 220px;
+    }
+    .Button-container{
+        width: 500px;
+        margin: none;
     }
 
     .img-container{
@@ -335,17 +315,25 @@
         padding: 1rem;
         margin-top: none;
     }
-    
-    
+
+    .img-container{
+        width: 400px
+    }
+
 }
 
 @media screen and (max-width:415px){
 
     .form-container{
+        max-width: 100px;
         margin-left: 20px;
     }
     .Button-container{
         flex-direction: column;
+    }
+
+    .Button-container{
+        width: 350px;
     }
 
     .Button-container button{
@@ -357,5 +345,17 @@
         align-items: flex-start;
         padding: 1rem;
         margin-top: 7rem; 
+    }
+    .decorationP{
+        max-width: 300px;
+    }
+    .textarea{
+        max-width: 319px;
+        max-height: 707px;
+        
+    }
+    .img-container{
+        width: 300px;
+        margin-left: 20px;
     }
 }
