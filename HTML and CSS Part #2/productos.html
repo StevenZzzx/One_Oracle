@@ -5,21 +5,55 @@
     <head>
         <meta charset="UTF-8">
         <title>Productos - Barberia Alura</title>
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="productos.css">
     </head>
 
     <body>
 
         <header>
-            <h1><img src="imagenes productos/logo.png" alt="logo depagina"> </h1>
-            
-            <ul>
-                <li>Home</li>
-                <li>Productos</li>
-                <li>Contacto</li>
-            </ul>
+            <div class="header-container">
+                <h1><img src="imagenes productos/logo.png" alt="logo depagina"> </h1>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html"> Home </a></li>
+                        <li><a href="productos.html"> Productos </a></li>
+                        <li><a href="contacto.html"> Contacto </a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
+        <main>
+            <ul class="productos-container">
+                <li>
+                    <h2>Cabello</h2>
+                    <img src="imagenes productos/cabello.jpg" alt=""> 
+                    <p class="descripcion-productos">Con tijera o máquina, a gusto del cliente</p>
+                    <p class="precio-productos">$ 10.00</p> 
+                </li>
+
+                <li>
+                    <h2>Barba</h2>
+                    <img src="imagenes productos/barba.jpg" alt=""> 
+                    <p class="descripcion-productos">Corte y diseño profesional de barba</p>
+                    <p class="precio-productos">$ 8.00</p>       
+                </li>
+
+                <li>
+                    <h2>Cabello + Barba</h2>
+                    <img src="imagenes productos/cabello+barba.jpg" alt=""> 
+                    <p class="descripcion-productos">Paquete completo de cabello y barba</p>
+                    <p class="precio-productos">$ 15.00</p> 
+                </li>
+            </ul>
+        </main>
+
+        <footer>
+            <img src="imagenes productos/logo-blanco.png" alt="logo pie de pagina">
+            <p class="texto-copyright">&copy Copyright Barberia Alura - 2020</p>
+        </footer>
     </body>
 
 </html>
