@@ -154,3 +154,39 @@ td,th{
     border: 1px solid #000000;
     padding: 8px 15px;
 }
+
+/* Estilos de la pagina de Home */
+
+.banner{
+    width: 100%;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.info-container p{
+    margin: 0 0 1em;
+    
+}
+
+.info-container strong{
+    font-weight: bold;
+}
+
+.info-container em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float:left; 
+    margin: 0 20px 20px 0;
+}
+
+.img-diferenciales{
+    width: 60%;
+}
