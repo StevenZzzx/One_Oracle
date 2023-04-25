@@ -1,0 +1,156 @@
+/* Estilo de la pagina de productos */
+
+header{
+    background:#949090;
+    padding: 20px 0;
+}
+
+.header-container{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 50px;
+}
+
+nav li{
+    display: inline-flex;
+    margin-left: 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 1s;
+}
+
+nav a:hover{
+    transform: scale(1.10);
+}
+
+.productos-container{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos-container li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.productos-container li:hover{
+    border-color: #813737;
+}
+
+.productos-container li:active{
+    border-color: #088c19;
+}
+
+.productos-container h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos-container li:hover h2{
+    font-size: 33px;
+}
+
+.descripcion-productos{
+    font-size: 18px;
+}
+
+.precio-productos{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes\ productos/bg.jpg);
+    padding: 40px;
+}
+
+.texto-copyright{
+    color:#ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/* Estilo de la pagina de contactos */
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padre{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #68506d;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+
+}
+
+.enviar:hover{
+    background: #6d4175;
+    box-shadow: 0 0.2rem 0.6rem #000000;
+    transform: scale(1.08);
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}

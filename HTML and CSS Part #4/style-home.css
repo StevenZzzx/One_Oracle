@@ -1,0 +1,56 @@
+.titulo-principal{
+   padding-left: 30px;
+}
+
+#banner{
+    width: 100%;
+
+}
+
+.info-container{
+
+    padding: 10px;
+    background: #949090;
+}
+
+.titulos-centralizados{
+    
+    text-align: center;
+    color: rgba(131, 51, 51, 0.863);
+}
+
+p{
+    text-align: center;
+}
+
+em strong{
+    color: rgb(97, 55, 93);
+}
+
+#parrafo2{
+    font-size: 20px;
+}
+
+.diferenciales-container{
+
+    padding: 30px;
+    background: #ffffff;
+
+}
+
+.items{
+    font-style: italic;
+
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.img-diferenciales{
+
+    width: 50%;
+}
