@@ -8,10 +8,9 @@ package bytebankHeredado;
  *
  * @author Steven
  */
-public interface Autenticable{
-   
-    public void setClave(String password);
-
-    public boolean iniciarSesion(String password);
-
+public class SaldoInsuficienteException extends RuntimeException{
+    
+    public SaldoInsuficienteException(String message){
+        super(message);
+    }
 }

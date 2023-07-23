@@ -8,10 +8,12 @@ package bytebankHeredado;
  *
  * @author Steven
  */
-public interface Autenticable{
-   
-    public void setClave(String password);
-
-    public boolean iniciarSesion(String password);
-
+public class TestCuentaExceptionSaldo {
+    
+    public static void main(String[] args) {
+        Cuenta cuenta = new CuentaAhorros(123);
+        cuenta.depositar(210);
+        cuenta.retirar(210);
+        cuenta.retirar(10);
+    }
 }
